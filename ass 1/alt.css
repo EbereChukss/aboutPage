@@ -1,0 +1,283 @@
+* {
+  font-family: "Almarai", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(249, 246, 246);
+}
+@media screen and (min-width: 768px) {
+  .secmain_div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .main_sec {
+    background-color: #fff6ee;
+    height: 100vh;
+    position: fixed;
+    width: 50%;
+  }
+  .alt_div {
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .main_header {
+    padding: 3rem 5rem 0 5rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 30px;
+    font-size: 700;
+  }
+  .main_p {
+    font-size: 15px;
+  }
+  .home_social {
+    text-align: center;
+    margin-top: 3rem;
+    letter-spacing: 0.5rem;
+  }
+  .home_social-icon {
+    color: black;
+  }
+  .rights {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 13px;
+    color: #aaaaaa;
+  }
+  .form_div {
+    padding: 5rem 5rem 0 9rem;
+    position: relative;
+    left: 550px;
+  }
+  form .app_div {
+    color: rgb(11, 30, 75);
+    font-size: 2rem;
+  }
+  form .app_div p {
+    color: #7b7b7b;
+    line-height: 30px;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .form_div form {
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  .colums {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .colums div {
+    width: 48%;
+  }
+  input {
+    width: 10rem;
+    height: 2.5rem;
+    padding: 5px;
+    font-size: 10px;
+    border: 1px solid grey;
+    border-radius: 0.2rem;
+  }
+  select:required:invalid {
+    color: #666;
+    font-size: 10px;
+    width: 10rem;
+    border: 1px solid gray;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+  }
+  label {
+    color: black;
+    font-size: 13px;
+  }
+  .footer {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(123, 123, 123);
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .footer a {
+    text-decoration: none;
+    color: 2054D2;
+  }
+  .btn_div button {
+    width: 100%;
+    padding: 12px 0px;
+    background: rgb(106, 111, 245);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .signin {
+    font-size: 13px;
+    text-align: center;
+    color: grey;
+    margin-top: 0.7rem;
+  }
+  .signin a {
+    color: rgb(106, 111, 245);
+    text-decoration: none;
+  }
+  @media screen and (max-width: 990px) {
+    .form_div {
+      padding: 5rem 5rem 0 9rem;
+      position: relative;
+      left: 320px;
+    }
+    .alt_div {
+      padding: 1rem 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .app_div h5 {
+      color: rgb(11, 30, 75);
+      line-height: 30px;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    .form_div form {
+      width: 150%;
+      box-shadow: rgba(0, 0, 0, 0.03) 0px 30px 60px;
+      background: rgb(255, 255, 255);
+      border-radius: 4px;
+      padding: 30px 30px 15px;
+      margin-bottom: 7rem;
+    }
+
+    .app_div p {
+      color: rgb(123, 123, 123);
+      line-height: 20px;
+      margin-bottom: 25px;
+    }
+    .colums {
+      text-align: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .item {
+      line-height: 2rem;
+    }
+    input {
+      width: 12rem;
+      height: 2.5rem;
+      padding: 5px;
+      font-size: 10px;
+      border: 1px solid grey;
+      border-radius: 0.2rem;
+    }
+    select:required:invalid {
+      color: #666;
+      font-size: 10px;
+      width: 12rem;
+      border: 1px solid gray;
+      height: 2.5rem;
+      border-radius: 0.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .secmain_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .res_div {
+    display: none;
+  }
+  .alt_div {
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .app_div h5 {
+    color: rgb(11, 30, 75);
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .form_div form {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 30px 60px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 30px 30px 15px;
+    margin-bottom: 7rem;
+  }
+
+  .app_div p {
+    color: rgb(123, 123, 123);
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .colums {
+    text-align: center;
+  }
+  .item {
+    line-height: 2rem;
+  }
+  input {
+    width: 16rem;
+    height: 2.5rem;
+    padding: 5px;
+    font-size: 10px;
+    border: 1px solid grey;
+    border-radius: 0.2rem;
+  }
+  select:required:invalid {
+    color: #666;
+    font-size: 10px;
+    width: 16rem;
+    border: 1px solid gray;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+  }
+  label {
+    color: black;
+    font-size: 13px;
+  }
+  .footer {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: rgb(123, 123, 123);
+    line-height: 20px;
+    margin-top: 1rem;
+    margin-bottom: 25px;
+  }
+  .footer a {
+    text-decoration: none;
+    color: 2054D2;
+  }
+  .btn_div button {
+    width: 100%;
+    padding: 12px 0px;
+    background: rgb(106, 111, 245);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .signin {
+    font-size: 13px;
+    text-align: center;
+    color: grey;
+    margin-top: 0.7rem;
+  }
+  .signin a {
+    color: rgb(106, 111, 245);
+    text-decoration: none;
+  }
+}
